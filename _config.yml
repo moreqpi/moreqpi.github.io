@@ -1,1 +1,11 @@
-theme: jekyll-theme-midnight
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
+locale: "en-US"
+title: "Just docs"
+subtitle: "Place for subtitles"
+name: "moreqpi"
+description: "Docs about linux and linux-based software"
+url: "https://moreqpi.githib.io"
+repository: "moreqpi/moreqpi.github.io"
+logo: "/assets/images/general/coffee.jpg"
+masthead_title: "My Custom Title"

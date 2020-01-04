@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>markdown samples - moreqpi docs</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../..">moreqpi docs</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../..">Home</a>
+                            </li>
+                            <li >
+                                <a href="../../about/">About</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Guides <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li class="active">
+    <a href="./">markdown samples</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../../about/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="disabled">
+                                <a rel="prev" >
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#github-flavored-markdown">GitHub-Flavored Markdown</a></li>
+            <li><a href="#_1">Краткое руководство</a></li>
+        <li class="main "><a href="#1-h1">Заголовок уровня 1 (h1)</a></li>
+            <li><a href="#2-h2">Заголовок уровня 2 (h2)</a></li>
+            <li><a href="#_2">Списки</a></li>
+            <li><a href="#_5">Цитаты</a></li>
+            <li><a href="#_6">Исходный код</a></li>
+            <li><a href="#_7">Инлайн код</a></li>
+            <li><a href="#_9">Ссылки</a></li>
+            <li><a href="#_10">Выделение текста</a></li>
+            <li><a href="#_11">Зачеркивание</a></li>
+            <li><a href="#_12">Картинки</a></li>
+            <li><a href="#_13">Раскрывающийся абзац</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="github-flavored-markdown">GitHub-Flavored Markdown</h1>
+<h2 id="_1">Краткое руководство</h2>
+<p>Абзацы создаются при помощи пустой строки. Если вокруг текста сверху и снизу есть пустые строки, то текст превращается в абзац.</p>
+<p>Чтобы сделать перенос строки,<br />
+вместо абзаца нужно поставить два пробела в конце предыдущей строки.</p>
+<p>Заголовки отмечаются отмечаются символом <code>#</code> (диез) в начале строки, от одного до шести. Например:</p>
+<h1 id="1-h1">Заголовок уровня 1 (h1)</h1>
+<h2 id="2-h2">Заголовок уровня 2 (h2)</h2>
+<h3 id="3-h3">Заголовок уровня 3 (h3)</h3>
+<h4 id="4-h4">Заголовок уровня 4 (h4)</h4>
+<h5 id="5-h5">Заголовок уровня 5 (h5)</h5>
+<h6 id="6-h6">Заголовок уровня 6 (h6)</h6>
+<p>В декоративных целях заголовки можно "закрывать" с обратной стороны. </p>
+<h4 id="3">Закрытый заголовок уровня 3</h4>
+<p>На отображение информации это не влияет.</p>
+<h2 id="_2">Списки</h2>
+<h4 id="_3">Для разметки неупорядоченных списков можно использовать:</h4>
+<ul>
+<li>символ <code>*</code></li>
+<li>символ <code>-</code></li>
+<li>или символ <code>+</code></li>
+</ul>
+<p>Вложенные пункты создаются четырьмя пробелами перед маркером (символом) пункта:
+- Элемент 1
+- Элемент 2
+    - Вложенный элемент 2.1
+    - Вложенный элемент 2.1
+- Элемент ...</p>
+<h4 id="_4">Для разметки упорядоченных списков перед элементами должна стоять цифра с точкой:</h4>
+<ol>
+<li>Элемент 1</li>
+<li>Элемент 2<ol>
+<li>Вложенный элемент</li>
+<li>Второй вложенный элемент</li>
+</ol>
+</li>
+<li>Элемент 3</li>
+</ol>
+<p>При этом не имеет значения какая цифра будет стоять в коде:</p>
+<ol>
+<li>Элемент 1</li>
+<li>
+<p>Элемент 2</p>
+<ol>
+<li>Вложенный элемент</li>
+<li>Другой вложенный элемент</li>
+</ol>
+</li>
+<li>
+<p>Элемент 3</p>
+</li>
+</ol>
+<p>Список с абзацами должен разделяться как обычный абзац:</p>
+<ul>
+<li>
+<p>Первый абзац</p>
+</li>
+<li>
+<p>Второй абзац</p>
+<p>Следующий абзац в текущем пункте списка.</p>
+</li>
+</ul>
+<p>Если не разделять, будет так:
+* Первый абзац
+* Второй абзац<br />
+    В этом варианте предыдущая строка заканчивается двумя пробелами.</p>
+<h2 id="_5">Цитаты</h2>
+<p>Цитаты оформляются как в электронной почте, с помощью символа <code>&gt;</code> .</p>
+<blockquote>
+<p>Это пример сообщения, использующий для цитирования.<br />
+В нём необходимо использовать те же правила по новым строкам.</p>
+</blockquote>
+<p>Новый абзац не будет продолжен как цитата.</p>
+<blockquote>
+<p>Если не начать его с символа <code>&gt;</code> .</p>
+<p>Пустые строки так же должны начинаться с символа <code>&gt;</code> .</p>
+</blockquote>
+<p>В цитатах, в том числе, могут быть вложенные цитаты:</p>
+<blockquote>
+<p>Цитируемое сообщение</p>
+<blockquote>
+<p>Может цитировать другое сообщение.<br />
+Перенос строк работает точно так же.</p>
+<p>И конечно, как и раньше, можно начать новый абзац.</p>
+</blockquote>
+<p>Или продолжить в новом абзаце основного сообщения.</p>
+</blockquote>
+<h2 id="_6">Исходный код</h2>
+<p>В обычном Markdown блоки кода открываются четырьмя пробелами в начале каждой строки.</p>
+<p>В GitHub-Flavored Markdown (сокращённо GFM) есть более удобный способ - три апострофа (на букве ё) до и после кода:</p>
+<pre><code>&lt;nav class=&quot;nav nav-primary&quot;&gt;
+  &lt;ul&gt;
+    &lt;li class=&quot;tab-conversation active&quot;&gt;
+      &lt;a href=&quot;#&quot; data-role=&quot;post-count&quot; class=&quot;publisher-nav-color&quot; data-nav=&quot;conversation&quot;&gt;
+        &lt;span class=&quot;comment-count&quot;&gt;0 комментариев&lt;/span&gt;
+        &lt;span class=&quot;comment-count-placeholder&quot;&gt;Комментарии&lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;dropdown user-menu&quot; data-role=&quot;logout&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;
+        &lt;span class=&quot;dropdown-toggle-wrapper&quot;&gt;
+          &lt;span&gt;
+            Войти
+          &lt;/span&gt;
+        &lt;/span&gt;
+        &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+</code></pre>
+
+<p>Если указать язык исходного кода - тот же текст будет отформатирован цветом в зависимости от элементов: </p>
+<pre><code class="html">&lt;nav class=&quot;nav nav-primary&quot;&gt;
+  &lt;ul&gt;
+    &lt;li class=&quot;tab-conversation active&quot;&gt;
+      &lt;a href=&quot;#&quot; data-role=&quot;post-count&quot; class=&quot;publisher-nav-color&quot; data-nav=&quot;conversation&quot;&gt;
+        &lt;span class=&quot;comment-count&quot;&gt;0 комментариев&lt;/span&gt;
+        &lt;span class=&quot;comment-count-placeholder&quot;&gt;Комментарии&lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;dropdown user-menu&quot; data-role=&quot;logout&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;
+        &lt;span class=&quot;dropdown-toggle-wrapper&quot;&gt;
+          &lt;span&gt;
+            Войти
+          &lt;/span&gt;
+        &lt;/span&gt;
+        &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+</code></pre>
+
+<p>Дополнительные удобства в том, что не придётся заменять угловые <code>&lt; &gt;</code> и амперсанд <code>&amp;</code> на их <a href="https://ru.wikipedia.org/wiki/%D0%9C%D0%BD%D0%B5%D0%BC%D0%BE%D0%BD%D0%B8%D0%BA%D0%B8_%D0%B2_HTML">html-сущности</a>.</p>
+<h2 id="_7">Инлайн код</h2>
+<p>Для вставки кода внутри предложений нужно заключать этот код в апострофы (на букве ё).</p>
+<p>К примеру <code>&lt;html class="ie no-js"&gt;</code>.</p>
+<p>Если внутри кода есть апостроф, то код надо открыть и закрыть двойными апострофами: <code>print "In this message symbol ` ."</code>.</p>
+<h3 id="_8">Горизонтальная черта</h3>
+<p>Горизонтальная черта <code>hr</code> создаётся тремя звёздочками <code>*</code> или тремя дефисами <code>-</code> .</p>
+<hr />
+<hr />
+<h2 id="_9">Ссылки</h2>
+<ul>
+<li>
+<p>Ссылки создаются в формате:<br />
+<code>[Отображаемый текст](http://example.com/link)</code>.</p>
+<p>К примеру <a href="https://ru.wikipedia.org/wiki/%D0%9C%D0%BD%D0%B5%D0%BC%D0%BE%D0%BD%D0%B8%D0%BA%D0%B8_%D0%B2_HTML">"Что такое html-сущности?"</a> .</p>
+</li>
+<li>
+<p>Ссылки с title элементом (всплывающее, при наведении, пояснение), создаются в формате:<br />
+<code>[Отображаемый текст](http://example.com/link "Всплывающее пояснение")</code>.</p>
+<p>К примеру <a href="https://ru.wikipedia.org/wiki/%D0%9C%D0%BD%D0%B5%D0%BC%D0%BE%D0%BD%D0%B8%D0%BA%D0%B8_%D0%B2_HTML" title="Можно узнать здесь.">"Что такое html-сущности?"</a> .</p>
+</li>
+<li>
+<p>Для повышения читабельности кода можно вынести саму ссылку за код, в формате:<br />
+<code>[ссылка1][id1]</code> или просто <code>[ссылка без идентификатора][].</code><br />
+А адреса, на которые они ссылаются:</p>
+<ul>
+<li>как <code>[ключ1]: http://example.com/link1</code></li>
+<li>или как <code>[ссылка без идентификатора]: http://example.com/somelink</code>
+Записи адресов, на которые ссылаются идентификаторы будут скрыты.</li>
+</ul>
+<p>Отображаться это будет как [ссылка 1][id1] и [ссылка без идентификатора][] .</p>
+<p>[id1]: http://example.com 
+[ссылка без идентификатора]: http://example.com/somelink</p>
+</li>
+</ul>
+<p>В случае отсутствия записей адресов в связке с идентификатором - вышеуказанные фомраты будут выведены как обычный текст.</p>
+<h2 id="_10">Выделение текста</h2>
+<p>Выделять слова можно при помощи звёздочки <code>*</code> или подчеркивания <code>_</code> .<br />
+- <em>Это наклонный текст</em> и <em>это тоже наклонный</em></p>
+<ul>
+<li>
+<p><strong>Это жирный текст</strong> и <strong>этот текст тоже</strong></p>
+</li>
+<li>
+<p><strong><em>Это жирный наклонный текст</em></strong> и <strong><em>как и этот</em></strong></p>
+</li>
+</ul>
+<h2 id="_11">Зачеркивание</h2>
+<p>С помощью символа тильда <code>~</code>, дважды установленного до и после текста ~~текст можно зачеркнуть~~.</p>
+<h2 id="_12">Картинки</h2>
+<p>У картинок синтаксис как и у ссылок, только перед открывающей квадратной скобкой ставится восклицательный знак <code>!</code>.</p>
+<ul>
+<li>
+<p>Формат может быть как с явным указанием расположения картинки:</p>
+<ul>
+<li>
+<p><code>![](path/to/image)</code><br />
+<img alt="" src="../images/150x100.png" /></p>
+</li>
+<li>
+<p><code>![Можно задать описание картинки (альт/alt)](path/to/image "А ещё можно задать title")</code><br />
+<img alt="Можно задать описание картинки (альт/alt)" src="../images/150x100.png" title="А ещё можно задать title" /></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Так и в формате "сноски":</p>
+<ul>
+<li>
+<p>Где сначала обозначены картинки и их идентификаторы:<br />
+<code>![][image1]</code><br />
+<img alt="" src="../images/150x100.png" /><br />
+<code>![Описание картинки][image2]</code><br />
+<img alt="Описание картинки" src="../images/150x100.png" title="Title" /></p>
+</li>
+<li>
+<p>А затем указано расположение картинок для идентификаторов и, при необходимости, Title:<br />
+<code>[image1]: path/to/image</code><br />
+<code>[image2]: path/to/image "Title"</code>  </p>
+</li>
+</ul>
+</li>
+<li>
+<p>Картинка с ссылкой обозначается в формате:<br />
+<code>![](path/to/image)](http://example.com)</code><br />
+![][(images/150x100.png)(http://example.com)]</p>
+</li>
+</ul>
+<h2 id="_13">Раскрывающийся абзац</h2>
+<ul>
+<li><details> 
+  <summary> Раскрывающийся абзац </summary><ul>
+<li>Обозначается в формате:<br />
+<code>&lt;details&gt;
+    &lt;summary&gt; Раскрывающийся абзац &lt;/summary&gt;
+      Содержание
+    &lt;/details&gt;</code>
+  </details></li>
+</ul>
+</li>
+</ul></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
